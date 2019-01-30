@@ -1,0 +1,8 @@
+<li>
+  <%= grocery.product %>
+  <%= grocery.category %>
+  <%= grocery.quantity %>
+  <%= link_to "Edit", edit_grocery_path(grocery), remote: true %>
+  <%= link_to "Delete", grocery, remote: true, method: :delete,
+        data: { confirm: 'Are you sure?' } %>
+</li>
